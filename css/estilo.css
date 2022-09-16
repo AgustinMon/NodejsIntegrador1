@@ -1,0 +1,170 @@
+:root{
+    --alto_seccion: 600px;
+    --verde: #09e390;
+    --letra_blanca: #ffffff;
+    --letra_gris_claro: #bebdbd;
+    --color_header: #666666;
+    --color_footer: #00445d;
+    --alto_nav: 70px;
+    --alto_footer: 90px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+/* definiciones generales para las listas */
+ul li {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto 0 auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+nav{
+    min-height:var(--alto_nav);
+    background-color: var(--color_header);
+}
+
+#titulo {
+    color: var(--letra_blanca);
+}
+
+nav img, span, ul{
+    display: inline;
+}
+
+nav img {
+    width: 125px;
+}
+
+nav ul{
+    vertical-align: middle;
+    border: 1px solid black;
+    float: right;
+}
+
+nav ul li{
+    display: inline;
+    color: var(--letra_gris_claro);
+}
+
+nav ul li:first-child{
+    color: var(--letra_blanca);
+}
+
+nav ul li:last-child{
+    color:var(--verde);
+}
+
+section{
+    margin-bottom: 2rem;
+}
+
+#seccion_1{
+    height: var(--alto_seccion);
+    width: 100%;
+    background-image: url("../media/ba1.jpg");
+    background-image: rgba(0,0,0,0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--letra_blanca);
+}
+
+#seccion_1 article{
+    opacity: 1;
+    position: relative;
+    top: calc(var(--alto_seccion) / 5);
+    margin-right: 3rem;
+    width: 40%;
+    float: right;
+    text-align: right;
+}
+
+#seccion_1 h2{
+    text-align: right;
+}
+
+/* contenedor de las cards */
+.container {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.card{
+    width: 18rem;
+}
+
+#seccion_3 {
+    height: 400px;
+}
+
+#seccion_4 {
+    height: 400px;
+}
+
+#playa{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("../media/honolulu.jpg");
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#texto{
+    color:var(--letra_blanca);
+    background-color: #000000;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+#texto p, h3, button{
+    margin: 10px auto auto 10px;
+}
+
+footer{
+    min-height: var(--alto_footer);
+    width: 100%;
+    background-color: var(--color_footer);
+}
+
+footer ul{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; 
+}
+
+footer ul li{
+    text-align: center;
+    color:var(--letra_blanca);
+    display: inline-flex;
+}
+
