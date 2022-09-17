@@ -77,23 +77,26 @@
         <section id="seccion_3">
             <article id="playa"></article>
             <article id="texto">
-                <h3>Bs. As. - Octubre</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci quae sit veniam commodi
+                <h3 class="m-2">Bs. As. - Octubre</h3>
+                <p class="m-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, adipisci quae sit veniam commodi
                     nihil unde neque possimus dolores repellat error, odit qui magnam impedit autem id. Esse, ipsa
                     voluptatibus?</p>
-                <button class="btn btn-outline-light">Conoce Mas</button>
+                <button class="btn btn-outline-light m-2">Conoce Mas</button>
             </article>
         </section>
+
         <section id="seccion_4">
             <div class="subtitle">Conviertete en un</div>
             <h2>Orador</h2>
             <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
             <form action="#">
-                <input type="text">
-                <input type="text" name="" id="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="row">
+                    <input class="col m-2" type="text" placeholder="nombre">
+                    <input class="col m-2" type="text" name="" id="" placeholder="apellido">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Sobre qué quieres hablar"></textarea>
                 <span>Recuerda incluir un titulo para la charla</span>
-                <input type="submit" value="Enviar">
+                <button class="btn btn-lg btn-success btn-block m-0">Enviar</button>
             </form>
         </section>
     </main>
