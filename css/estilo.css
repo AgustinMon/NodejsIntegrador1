@@ -105,11 +105,10 @@ section{
 }
 
 .container {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row;
     justify-content: space-between;
 }
 
@@ -120,6 +119,10 @@ section{
 /* playa */ 
 #seccion_3 {
     min-height: var(--seccion_3_height);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #playa{
@@ -174,3 +177,74 @@ footer ul li{
     display: inline-flex;
 }
 
+@media screen and (max-width: 1200px) {
+    body{
+        width: 100%;
+        background-color: #09e390;
+    }
+
+    #seccion_1 article{
+        top: calc(var(--alto_seccion) / 7);
+        margin-right: 3rem;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: #dce309;
+    }
+
+    #seccion_1 article{
+        top: calc(var(--alto_seccion) / 8);
+        margin-right: 3rem;
+        width: 60%;
+        overflow: scroll;
+    }
+
+    .card{
+        margin: 10px auto 0 auto;
+    }
+
+    #seccion_3 {
+        min-height: var(--seccion_3_height);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #playa{
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+    
+    #texto{
+        width: 90%;
+        margin: 10px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body{
+        background-color: #09a9e3;
+    }
+
+    nav{
+        overflow: scroll;
+    }
+
+
+    #seccion_1{
+        background-repeat: repeat;
+        background-size: contain;
+        overflow: scroll;
+    }
+
+    #seccion_1 article{
+        top: 10px;
+        margin-right: 1rem;
+        width: 100%;
+        overflow: scroll;
+    }
+}
