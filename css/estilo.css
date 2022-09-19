@@ -56,6 +56,11 @@ nav img {
     width: 125px;
 }
 
+nav ul {
+    position: absolute;
+    right: 10px;
+}
+
 nav ul li{
     display: inline;
     color: var(--letra_gris_claro);
@@ -178,6 +183,14 @@ footer ul li{
     text-align: center;
     color:var(--letra_blanca);
     display: inline-flex;
+}
+
+/* importante para que el menu flote a la derecha
+hasta que se transforma en menu hamburguesa*/
+@media screen and (max-width: 991px) {
+    nav ul {
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 1200px) {
