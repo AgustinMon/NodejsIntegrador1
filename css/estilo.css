@@ -42,8 +42,6 @@ h2 {
 
 nav{
     min-height:var(--alto_nav);
-    background-color: var(--color_header);
-    position: relative;
 }
 
 #titulo {
@@ -52,7 +50,6 @@ nav{
 
 nav img, span, ul{
     vertical-align: middle;
-    display: inline;
 }
 
 nav img {
