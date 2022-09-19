@@ -147,6 +147,7 @@ section{
 
 #seccion_4 {
     min-height: 400px;
+    width: 90%;
 }
 
 #seccion_4 p{
@@ -193,7 +194,7 @@ footer ul li{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     #seccion_1 article{
         top: calc(var(--alto_seccion) / 8);
         margin-right: 2rem;
