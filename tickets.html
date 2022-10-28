@@ -50,9 +50,24 @@ Alejandro Agustin Mondelli -->
     </nav>
     <main>
         <section class="container mt-2">
-            <div class="card"><h5 class="card-title">Estudiante</h5></div>
-            <div class="card">Trainee</div>
-            <div class="card">Junior</div>
+            <div class="card">
+                <h5 class="card-title">Estudiante</h5>
+                <p>Tienen descuento</p>
+                <p>80%</p>
+                <p>Presentar documentación</p>
+            </div>
+            <div class="card">
+                <h5 class="card-title">Trainee</h5>
+                <p>Tienen descuento</p>
+                <p>50%</p>
+                <p>Presentar documentación</p>
+            </div>
+            <div class="card">
+                <h5 class="card-title">Junior</h5>
+                <p>Tienen descuento</p>
+                <p>15%</p>
+                <p>Presentar documentación</p>
+            </div>
         </section>
         <section class="mt-1">
             <h3>Venta</h3>
@@ -63,9 +78,9 @@ Alejandro Agustin Mondelli -->
                 <input type="email" name="email" id="email" placeholder="indique email">
                 <input type="number" name="cantidad" id="cantidad" placeholder="0" min="0" max="20">
                 <select name="tipo" id="tipo">
-                    <option value="100">Estudiante</option>
-                    <option value="200">Trainee</option>
-                    <option value="300">Junior</option>
+                    <option value="0">Estudiante</option>
+                    <option value="1">Trainee</option>
+                    <option value="2">Junior</option>
                 </select>
                 <div id="errorHandler"></div>
                 <div>Total a pagar: $ <span id="total"></span></div>

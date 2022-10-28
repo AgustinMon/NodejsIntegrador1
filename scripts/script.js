@@ -13,6 +13,10 @@ const cantidad = document.getElementById("cantidad");
 const tipo = document.getElementById("tipo");
 const total = document.getElementById("total");
 
+// precio
+const precio = 200;
+const descuentos = [0.2, 0.5, 0.85];
+
 // borra valores
 borrar.addEventListener("click", (ev)=>{
     ev.preventDefault();
@@ -28,9 +32,9 @@ borrar.addEventListener("click", (ev)=>{
 resumen.addEventListener("click", (ev)=>{
     ev.preventDefault();
     let q = parseInt(cantidad.value) | 0;
-    let p = parseInt(tipo.options[tipo.selectedIndex].value);
+    let t = parseInt(tipo.options[tipo.selectedIndex].value);
+    let p = precio * descuentos[t];
     if (q < 1) marcarError("Error, la cantidad debe ser mayor a 0");
-    console.log(q);
     let importe = (q * p).toString() | "error";
     total.innerHTML = importe ;
 })
